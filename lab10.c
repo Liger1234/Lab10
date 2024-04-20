@@ -12,7 +12,6 @@ struct Trie {
 
 // Inserts the word to the trie structure
 void insert(struct Trie *pTrie, char *word) {
-  struct Trie *pTrie = *pTrie;
   for (int i = 0; i < strlen(word); i++) {
     int index = word[i] - 'a';
     if (pTrie->children[index] == NULL) {
